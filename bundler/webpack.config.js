@@ -9,7 +9,8 @@ module.exports = {
     devServer: {
         contentBase: './dist',
         open: 'Firefox',
-        host: '0.0.0.0'
+        host: '0.0.0.0',
+        useLocalIp: true
     },
     entry: path.resolve(__dirname, '../src/script/main.js'),
     output: {
