@@ -56,6 +56,17 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(mp3|ogg|wav)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'audios/'
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(otf|woff2|woff)$/,
                 use: [
                     {
